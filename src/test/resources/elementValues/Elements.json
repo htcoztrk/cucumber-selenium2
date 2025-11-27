@@ -1,0 +1,67 @@
+[
+  {
+    "key": "txtInput",
+    "value": "input[role='combobox']",
+    "type": "css"
+  },
+  {
+    "key": "windowButton",
+    "value": "windowButton",
+    "type": "id"
+  },
+  {
+    "key": "sampleHeading",
+    "value": "sampleHeading",
+    "type": "id"
+  },
+  {
+    "key": "cookieBoxSaveButton",
+    "value": "CookieBoxSaveButton",
+    "type": "id"
+  },
+  {
+    "key": "btnLoginWithEmail",
+    "value": "//span[contains(text(),\" Log In with e-mail \") and @class=\"mat-button-wrapper\"]",
+    "type": "xpath"
+  },
+  {
+    "key": "txtEmail",
+    "value": "email",
+    "type": "id"
+  },
+  {
+    "key": "txtPassword",
+    "value": "password",
+    "type": "id"
+  },
+  {
+    "key": "random",
+    "value": "//a[1]",
+    "type": "xpath"
+  },
+  {
+    "key": "amazonlogo",
+    "value": "nav-logo-sprites",
+    "type": "id"
+  },
+  {
+    "key": "konumugüncelle",
+    "value": "nav-global-location-popover-link",
+    "type": "id"
+  },
+  {
+    "key": "closebutton",
+    "value": ".a-button-close.a-declarative",
+    "type": "css"
+  },
+  {
+    "key": "searchbuttontext",
+    "value": "#twotabsearchtextbox",
+    "type": "id"
+  },
+  {
+    "key": "searchbutton",
+    "value": "nav-search-submit-button",
+    "type": "id"
+  }
+]
