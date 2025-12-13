@@ -1,5 +1,6 @@
 package com.testinium;
 
+import io.cucumber.core.api.Scenario;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import java.net.MalformedURLException;
@@ -12,7 +13,6 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
-
 
 /**
 * The type Hooks.
@@ -44,7 +44,7 @@ public class BaseTest {
     * This method Checks testinium key and initialize the webdriver correctly from web_driver package
     */
     @Before
-    public void beforeTest() {
+    public void beforeTest(Scenario scenario) {
     logger.info("************************************  BeforeScenario  ************************************");
     try {
         ChromeOptions options = new ChromeOptions();
@@ -57,6 +57,7 @@ public class BaseTest {
         options.setExperimentalOption("prefs", prefs);
         capabilities.setCapability(ChromeOptions.CAPABILITY, options);
         capabilities.setCapability("key", System.getProperty("key"));
+        capabilities.setCapability("scenarioName", scenario.getName());
         browserName = System.getenv("browser");
         driver = new RemoteWebDriver(new URL("http://host.docker.internal:4444/wd/hub"), capabilities);
         actions = new Actions(driver);
