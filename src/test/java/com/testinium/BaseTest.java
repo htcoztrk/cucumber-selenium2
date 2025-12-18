@@ -1,13 +1,15 @@
 package com.testinium;
 
-import io.cucumber.core.api.Scenario;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
+
+import io.cucumber.java.Scenario;
 import org.apache.log4j.Logger;
+import org.junit.jupiter.api.BeforeAll;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
@@ -43,7 +45,7 @@ public class BaseTest {
     * Before test
     * This method Checks testinium key and initialize the webdriver correctly from web_driver package
     */
-    @Before
+    @BeforeAll
     public void beforeTest(Scenario scenario) {
     logger.info("************************************  BeforeScenario  ************************************");
     try {
