@@ -1,8 +1,7 @@
 package com.testinium.model;
 
-
-import gherkin.deps.com.google.gson.annotations.Expose;
-import gherkin.deps.com.google.gson.annotations.SerializedName;
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
 
 /**
  * The Model of ElementInfo.

@@ -13,8 +13,8 @@ import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.TimeUnit;
 
 import com.google.common.reflect.TypeToken;
+import com.google.gson.Gson;
 import com.testinium.model.ElementInfo;
-import gherkin.deps.com.google.gson.Gson;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
