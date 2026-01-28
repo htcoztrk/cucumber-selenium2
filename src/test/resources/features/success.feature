@@ -144,7 +144,8 @@ Feature: success
     Then Click to element "closebutton"
     Then Wait 2 seconds
 
-  Scenario: @askEskiBirYalan
+  @askEskiBirYalan
+  Scenario: askEskiBirYalan
     Given Go to "https://www.amazon.com.tr/"
     Then Wait 2 seconds
     Then Click to element "random"
